@@ -1,0 +1,124 @@
+---
+title: HighRock - group-lessons
+layout: ./app/layout.ejs
+engine: ejs
+current: group-lessons
+---
+
+<main class="vh-100 text-gray-c1 pt-10">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="group-calendar bg-primary-light">
+      <div
+        class="month bg-primary-dark d-flex justify-content-between align-items-center text-center p-8"
+      >
+        <i class="fas fa-angle-left prev"></i>
+        <div class="date">
+          <h1 class="current-month fs-1 fw-bold mb-0"></h1>
+        </div>
+        <i class="fas fa-angle-right next"></i>
+      </div>
+      <div class="container">
+        <div class="weekdays d-flex align-items-center pt-4">
+          <div class="text-center fs-2 ls-01">Sun</div>
+          <div class="text-center fs-2 ls-01">Mon</div>
+          <div class="text-center fs-2 ls-01">Tue</div>
+          <div class="text-center fs-2 ls-01">Wed</div>
+          <div class="text-center fs-2 ls-01">Thu</div>
+          <div class="text-center fs-2 ls-01">Fri</div>
+          <div class="text-center fs-2 ls-01">Sat</div>
+        </div>
+        <div class="days mt-8 d-flex flex-wrap"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="reserveModal"
+    tabindex="-1"
+    aria-labelledby="reserveModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reserveModalLabel">預約資訊</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body py-8">
+          <form>
+            <div class="row mb-4">
+              <label class="col-3 col-form-label text-center" for="group-lesson-name"
+                >課程名稱
+                <p class="d-none">id: <span class="group-lesson-id"></span></p
+              ></label>
+              <div class="col-9">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="group-lesson"
+                  id="group-lesson-name"
+                  readonly
+                />
+              </div>
+            </div>
+            <div class="row mb-4">
+              <label class="col-3 col-form-label text-center" for="group-lesson-time"
+                >課程時間</label
+              >
+              <div class="col-9">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="group-lesson"
+                  id="group-lesson-time"
+                  readonly
+                />
+              </div>
+            </div>
+            <div class="row mb-4">
+              <label class="col-3 col-form-label text-center" for="group-lesson-branch"
+                >課程館別</label
+              >
+              <div class="col-9">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="group-lesson"
+                  id="group-lesson-branch"
+                  readonly
+                />
+              </div>
+            </div>
+            <div class="row">
+              <label class="col-3 col-form-label text-center" for="group-lesson-date"
+                >課程日期</label
+              >
+              <div class="col-9">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="group-lesson"
+                  id="group-lesson-date"
+                  readonly
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">取消</button>
+          <button type="button" class="group-lesson-reservation-confirm-btn btn btn-primary">
+            確認預約
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,167 @@
+---
+title: HighRock - login
+layout: ./app/layout.ejs
+engine: ejs
+current: member-login
+---
+
+<main class="bg-c-gradient">
+  <section class="py-20 py-md-30 vh-75 vh-lg-100">
+    <div class="container">
+      <div class="row">
+        <!-- rocks deco -->
+        <div class="col-lg-6 justify-content-center d-none d-lg-block position-relative">
+          
+          <img
+            class="login-rocks login-rock-1 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-1.png"
+            alt="login-img01"
+          />
+          <img
+            class="login-rocks login-rock-2 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-2.png"
+            alt="login-img02"
+          />
+          <img
+            class="login-rocks login-rock-3 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-3.png"
+            alt="login-img03"
+          />
+          <img
+            class="login-rocks login-rock-4 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-4.png"
+            alt="login-img04"
+          />
+          <img
+            class="login-rocks login-rock-5 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-5.png"
+            alt="login-img05"
+          />
+          <img
+            class="login-rocks login-rock-6 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-6.png"
+            alt="login-img06"
+          />
+          <img
+            class="login-rocks login-rock-7 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-7.png"
+            alt="login-img07"
+          />
+          <img
+            class="login-rocks login-rock-8 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-8.png"
+            alt="login-img08"
+          />
+          <img
+            class="login-rocks login-rock-9 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-9.png"
+            alt="login-img09"
+          />
+          <img
+            class="login-rocks login-rock-10 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-8.png"
+            alt="login-img01"
+          />
+          <img
+            class="login-rocks login-rock-11 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-2.png"
+            alt="login-img02"
+          />
+          <img
+            class="login-rocks login-rock-12 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-3.png"
+            alt="login-img03"
+          />
+          <img
+            class="login-rocks login-rock-13 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-4.png"
+            alt="login-img04"
+          />
+          <img
+            class="login-rocks login-rock-14 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-6.png"
+            alt="login-img05"
+          />
+          <img
+            class="login-rocks login-rock-15 position-absolute"
+            src="./assets/images/Background-mobile/rock-sm-6.png"
+            alt="login-img06"
+          />
+          <img
+            class="login-climber login-climber-1 position-absolute"
+            src="./assets/images/Icon/climber-1.png"
+            alt="climber-1"
+          />
+          <img
+            class="login-climber login-climber-2 position-absolute"
+            src="./assets/images/Icon/climber-2.png"
+            alt="climber-2"
+          />
+          <img
+            class="login-climber login-climber-3 position-absolute"
+            src="./assets/images/Icon/climber-3.png"
+            alt="climber-3"
+          />
+          <img
+            class="login-climber login-climber-4 position-absolute"
+            src="./assets/images/Icon/climber-4.png"
+            alt="climber-4"
+          />
+          <img
+            class="login-climber login-climber-5 position-absolute"
+            src="./assets/images/Icon/climber-5.png"
+            alt="climber-5"
+          />
+        </div>
+        <!-- login form -->
+        <div class="col-lg-5 offset-lg-1">
+          <div
+            class="login-panel d-flex flex-column align-items-center rounded-3 shadow py-10 py-lg-20 px-4 px-lg-2 bg-opacity-c1"
+          >
+            <h1 class="text-gray-c1 fw-bold mb-8">會員登入</h1>
+            <form
+              class="member-login-form d-flex flex-column justify-content-between w-100 w-md-75 h-100 needs-validation"
+            >
+              <div class="mb-8">
+                <label class="form-label" for="member-login-email">帳號</label>
+                <span class="messages fs-7 text-danger email mb-6 mt-1"></span>
+                <input
+                  type="email"
+                  class="form-control rounded-pill px-6 mb-4"
+                  id="member-login-email"
+                  name="email"
+                  placeholder="請輸入帳號 (email@mail.com)"
+                  autocomplete="email"
+                  required
+                />
+                <label class="form-label" for="member-login-password">密碼</label>
+                <span class="messages fs-7 text-danger password mb-6 mt-1"></span>
+                <input
+                  type="password"
+                  class="form-control rounded-pill px-6 mb-4"
+                  id="member-login-password"
+                  name="password"
+                  placeholder="請輸入密碼"
+                  autocomplete="new-password"
+                  required
+                />
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input bg-gray-c1 border-gray-c1"
+                    id="member-account-remember"
+                  />
+                  <label for="member-account-remember" class="form-check-label">記住帳號</label>
+                </div>
+              </div>
+              <div class="w-100 d-flex flex-column">
+                <a href="#" class="member-login-btn btn btn-outline-gray-c1 mb-4">登入</a>
+                <a href="./member-register.html" class="btn btn-outline-gray-c1">註冊會員</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,355 @@
+---
+title: HighRock - courses
+layout: ./app/layout.ejs
+engine: ejs
+current: courses-index
+---
+
+<main class="courses-list bg-primary-lightest">
+  <section class="courses-banner vh-50">
+    <div
+      class="container d-flex align-items-center justify-content-center justify-content-lg-end h-100"
+    >
+      <div class="courses-slogan py-10 px-7 py-lg-15 px-lg-12 rounded-3 d-flex flex-column">
+        <h1
+          class="text-gray-c1 text-center text-lg-start fw-bold fs-1 display-size-lg-5 mb-1 mb-lg-4"
+        >
+          攀岩訓練課程
+        </h1>
+        <p class="text-center text-lg-start fs-lg-1">Rock Climbing Training</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="text-center py-10 py-lg-40">
+    <div class="container">
+      <h2 class="fs-3 display-size-lg-7 mb-4 mb-lg-6">如何選擇課程？</h2>
+      <p class="fs-5 fs-lg-4 mb-2">攀岩訓練種類繁多，適合新手的課程有哪些呢？</p>
+      <p class="fs-5 fs-lg-4 mb-2">
+        「攀岩」可以大致分為「上攀」與「抱石」兩種項目，可以依據您喜歡的項目或地點來選擇課程。
+      </p>
+      <p class="fs-5 fs-lg-4 mb-8 mb-lg-10">
+        HighRock 的攀岩課程以運動攀登為主軸，針對對攀岩有興趣的新手，從頂繩攀登 (Top Rope) 跟抱石
+        (Bouldering) 開始一起打好基礎。
+      </p>
+      <h3 class="fs-4 fs-lg-2 mb-4 mb-lg-6">【上攀】</h3>
+      <p class="fs-5 fs-lg-4 mb-8 mb-lg-10">
+        上攀的高度約為 8 ~ 10 公尺。<br />
+        上攀通常需兩人為一組，一人攀爬一人確保，館內設有自動確保器可幫忙確保，館內也會有教練確保安全。
+      </p>
+      <h3 class="fs-4 fs-lg-2 mb-4 mb-lg-6">【抱石】</h3>
+      <p class="fs-5 fs-lg-4">
+        抱石的體驗高度約為 3~5 公尺。<br />
+        抱石不須確保，地板鋪設厚軟墊以確保墜落安全，所以抱石獨自一人也可以攀爬，館內也會有教練確保安全。
+      </p>
+    </div>
+  </section>
+  <!-- beginner -->
+  <section class="py-10">
+    <div class="container">
+      <!-- bouldering -->
+      <h2 class="text-center text-lg-start fs-3 display-size-lg-7 mb-2 mb-lg-4">初學者 Beginner</h2>
+      <hr class="mb-5 mb-lg-10" />
+      <div class="row mb-4 mb-lg-30">
+        <div class="col-lg-4 w-lg-25 me-lg-4 mb-4 mb-lg-0">
+          <img
+            class="rounded-3"
+            src="./assets/images/Training/training-lg-1.png"
+            alt="bouldering "
+          />
+        </div>
+        <div class="col-lg-8 d-flex flex-column">
+          <h3 class="fs-4 fs-lg-2 fw-bold mt-lg-2 mb-4 mb-lg-6">抱石 (Bouldering)</h3>
+          <p class="fs-5 fs-lg-4 mb-4">
+            抱石課程將帶學員練習不同的腳法技巧及手點抓法。利用橫向攀爬，練習身體重心的轉移與鍛鍊協調性。
+            再利用直向攀爬，練習雙腳正確踩點及施力方式。練習足夠後將可以嘗試挑戰不同難度路線。
+          </p>
+          <p class="fs-5 fs-lg-4 mb-4">適合新手與老手</p>
+          <ul class="list-unstyled d-none d-lg-block">
+            <li>
+              1. 課程天數：兩次 4 小時，共計 8 小時 ( 週間班上課時間為 18:00～22:00
+              、週末班上課時間為上午 08:00～12:00 )
+            </li>
+            <li>2. 課程地點：HighRock 攀岩館 大安館 或 新莊館 ( 不可跨館上課 )</li>
+            <li>3. 參與人數：3 人至 6 人</li>
+            <li>4. 課程優惠：會員為 九折 優惠價</li>
+          </ul>
+          <a
+            href="#"
+            class="bouldering-register-btn btn btn-primary rounded-pill mt-auto align-self-end py-2 px-4 px-lg-8 w-100 w-lg-25"
+            data-courseId="course01"
+            >馬上報名</a
+          >
+        </div>
+      </div>
+      <!-- top-rope -->
+      <h2 class="text-center text-lg-start fs-3 display-size-lg-7 mb-2 mb-lg-4 d-none d-lg-block">
+        初學者 Beginner
+      </h2>
+      <hr class="mb-5 mb-lg-10" />
+      <div class="row">
+        <div class="col-lg-4 w-lg-25 me-lg-4 mb-4 mb-lg-0">
+          <img class="rounded-3" src="./assets/images/Training/training-lg-2.png" alt="top-rope " />
+        </div>
+        <div class="col-lg-8 d-flex flex-column">
+          <h3 class="fs-4 fs-lg-2 fw-bold mt-lg-2 mb-4 mb-lg-6">頂繩攀岩 (Top Rope)</h3>
+          <p class="fs-5 fs-lg-4 mb-4">
+            頂繩攀登是一堂適合入門新手的訓練，課程中除了繩結、基礎攀岩技巧、確保技術之外，還有攀岩安全口號等課程內容。課程結束後有能力參與安檢卡考試，以及能自己與同伴一起攀岩。
+          </p>
+          <p class="fs-5 fs-lg-4 mb-4">適合新手與老手</p>
+          <ul class="list-unstyled d-none d-lg-block">
+            <li>
+              1. 課程天數：兩次 4 小時，共計 8 小時 ( 週間班上課時間為 18:00～22:00
+              、週末班上課時間為上午 08:00～12:00 )
+            </li>
+            <li>2. 課程地點：HighRock 攀岩館 大安館 或 新莊館 ( 不可跨館上課 )</li>
+            <li>3. 參與人數：4 人至 8 人</li>
+            <li>4. 課程優惠：會員為 九折 優惠價</li>
+          </ul>
+          <a
+            href="#"
+            class="btn btn-primary rounded-pill mt-auto align-self-end py-2 px-4 px-lg-8 w-100 w-lg-25"
+            data-courseId="course02"
+            >馬上報名</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- experienced -->
+  <section class="py-20 py-lg-40">
+    <div class="container">
+      <h2 class="text-center text-lg-start fs-3 display-size-lg-7 mb-2 mb-lg-4">
+        有上攀經驗者 Experienced
+      </h2>
+      <hr class="mb-5 mb-lg-10" />
+      <ul class="row row-cols-1 row-cols-lg-2 list-unstyled">
+        <!-- lead -->
+        <li class="col d-flex flex-column flex-lg-row">
+          <div class="courses-experienced-img me-lg-4 w-100 mb-4 mb-lg-0">
+            <img
+              class="rounded-3 h-100"
+              src="./assets/images/Training/training-lg-3.png"
+              alt="lead "
+            />
+          </div>
+          <div class="d-flex flex-column pe-4">
+            <h3 class="fs-4 fs-lg-2 fw-bold mt-lg-2 mb-4 mb-lg-6">先鋒攀登 (Lead Climbing)</h3>
+            <p class="fs-5 fs-lg-4 mb-4">
+              先鋒攀登是Top
+              Rope之後的進階課程，主要為教導先鋒攀登的技能，讓你能與繩伴先鋒一條路線攀岩。課程內容將包含：進階攀岩技巧、先鋒確保、進階攀岩技術、掛快扣以及掛繩等技術。
+            </p>
+            <p class="fs-5 fs-lg-4 mb-4 mb-lg-8">經驗限制 - 適合已有上攀經驗者</p>
+            <a
+              href="#"
+              class="btn btn-primary rounded-pill mt-auto align-self-end py-2 px-4 px-lg-8 w-100 w-lg-auto"
+              data-courseId="course03"
+              >馬上報名</a
+            >
+          </div>
+        </li>
+        <div class="container d-lg-none">
+          <hr class="mb-5 mb-lg-0" />
+        </div>
+        <!-- clean-anchor -->
+        <li class="col d-flex flex-column flex-lg-row">
+          <div class="courses-experienced-img me-lg-4 w-100 mb-4 mb-lg-0">
+            <img
+              class="rounded-3 h-100"
+              src="./assets/images/courses/clean-anchor.png"
+              alt="clean-anchor.png "
+            />
+          </div>
+          <div class="d-flex flex-column">
+            <h3 class="fs-4 fs-lg-2 fw-bold mt-lg-2 mb-4 mb-lg-6">系統轉換 (Clean Anchor)</h3>
+            <p class="fs-5 fs-lg-4 mb-4">
+              完成頂繩與先鋒攀登之後，您已經可以在多數的人工攀岩場攀岩。如果您有想要到龍洞、關子嶺或壽山等戶外岩場攀岩，那麼您還需要學系統轉換，如此一來可以能自主的回收岩壁上的裝備。
+            </p>
+            <p class="fs-5 fs-lg-4 mb-4 mb-lg-8">經驗限制 - 適合已有先鋒攀登經驗者</p>
+            <a
+              href="#"
+              class="btn btn-primary rounded-pill mt-auto align-self-end py-2 px-4 px-lg-8 w-100 w-lg-auto"
+              data-courseId="course04"
+              >馬上報名</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- course register -->
+<main class="course-register bg-primary-lightest d-none">
+  <!-- register panel -->
+  <section class="register-panel py-10 py-lg-20 position-relative">
+    <img src="./assets/images/Icon/loading.gif" alt="" />
+  </section>
+  <!-- course info -->
+  <section class="py-10 py-lg-20 mb-lg-20">
+    <div class="container">
+      <ul class="register-tabs row row-cols-1 row-cols-lg-4 border-bottom-lg-8 mb-0 list-unstyled">
+        <li class="col register-tab-active">
+          <a href="#" class="text-center fs-lg-3 fw-bold py-2" data-courseInfoTitle="information"
+            >課程資訊</a
+          >
+        </li>
+        <li class="col">
+          <a href="#" class="text-center fs-lg-3 fw-bold py-2" data-courseInfoTitle="content"
+            >課程內容</a
+          >
+        </li>
+        <li class="col">
+          <a href="#" class="text-center fs-lg-3 fw-bold py-2" data-courseInfoTitle="introduction"
+            >課程介紹</a
+          >
+        </li>
+
+        <li class="col">
+          <a
+            href="#"
+            class="text-center fs-lg-3 fw-bold py-2"
+            data-courseInfoTitle="cancellationPolicy"
+            >取消政策</a
+          >
+        </li>
+      </ul>
+      <div
+        class="register-info-content bg-primary-light mb-0 px-12 py-12 mx-n3 d-none d-lg-block"
+      ></div>
+    </div>
+  </section>
+  <!-- other courses -->
+  <section class="py-10 py-lg-40">
+    <div class="container">
+      <h2 class="text-center text-lg-start mb-4">相關課程</h2>
+      <ul class="other-courses row row-cols-1 row-cols-lg-3 list-unstyled"></ul>
+    </div>
+  </section>
+
+  <!-- register model -->
+  <section>
+    <div class="register-model">
+      <div class="register-model-content bg-white px-10 px-lg-30 py-10 rounded-3">
+        <ul class="list-unstyled d-flex flex-column justify-content-around h-100">
+          <li>
+            <a
+              class="bg-blue-c1 fs-4 fs-lg-2 text-center shadow rounded-3 px-20 py-15"
+              href="./member-login.html"
+              >會員登入</a
+            >
+          </li>
+          <li>
+            <a
+              class="register-model-btn-member bg-yellow-c1 fs-4 fs-lg-2 text-center shadow rounded-3 px-20 py-15"
+              href="./member-register.html"
+              >註冊</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- registration-form -->
+  <section>
+    <div class="register-model-member">
+      <div class="register-model-member-content bg-white px-4 px-lg-20 py-4 py-lg-10 rounded-3">
+        <h2 class="fw-bold mb-4">報名資訊</h2>
+        <form class="register-model-member-form d-flex flex-column">
+          <label class="mb-1" for="register-member-name">真實姓名 (Passport Name)</label>
+          <input
+            class="fs-6 py-1 px-2"
+            type="text"
+            placeholder="請輸入姓名"
+            name="username"
+            id="register-member-name"
+          />
+          <span class="messages fs-7 text-danger username mb-6 mt-1"></span>
+
+          <label class="mb-1" for="register-member-email">電子信箱 (Email Address)</label>
+          <input
+            class="fs-6 py-1 px-2"
+            type="email"
+            placeholder="請輸入電子信箱"
+            name="email"
+            id="register-member-email"
+          />
+          <span class="messages fs-7 text-danger email mb-6 mt-1"></span>
+
+          <label class="mb-1" for="register-member-phoneNum">連絡電話 (Phone Number)</label>
+          <input
+            class="fs-6 py-1 px-2"
+            type="tel"
+            placeholder="請輸入電話號碼"
+            name="tel"
+            id="register-member-phoneNum"
+          />
+          <span class="messages fs-7 text-danger tel mb-12 mt-1"></span>
+
+          <div class="row">
+            <div class="col-md-6 d-flex flex-column">
+              <label for="course-member-id">課程編號</label>
+              <input
+                class="fs-6 fs-lg-4 rounded-pill py-1 px-4 mb-2 mb-lg-6"
+                type="text"
+                name="course-member-id"
+                id="course-member-id"
+                value=""
+                disabled
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column">
+              <label for="course-member-name">課程名稱</label>
+              <input
+                class="fs-6 fs-lg-4 rounded-pill py-1 px-4 mb-2 mb-lg-6"
+                type="text"
+                name="course-member-name"
+                id="course-member-name"
+                value=""
+                disabled
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column">
+              <label for="course-member-price">課程價格</label>
+              <input
+                class="fs-6 fs-lg-4 rounded-pill py-1 px-4 mb-2 mb-lg-6"
+                type="text"
+                name="course-member-price"
+                id="course-member-price"
+                value=""
+                disabled
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column">
+              <label for="course-member-branch">課程分館</label>
+              <input
+                class="fs-6 fs-lg-4 rounded-pill py-1 px-4 mb-2 mb-lg-6"
+                type="text"
+                name="course-member-branch"
+                id="course-member-branch"
+                value=""
+                disabled
+              />
+            </div>
+            <div class="col-12">
+              <label for="course-member-batch">課程梯次</label>
+              <input
+                class="fs-6 fs-lg-4 rounded-pill py-1 px-4 mb-12 w-100"
+                type="text"
+                name="course-member-batch"
+                id="course-member-batch"
+                value=""
+                disabled
+              />
+            </div>
+          </div>
+
+          <input type="submit" class="btn btn-gray-c1 mb-4" value="確認" />
+          <a href="#" class="btn btn-danger">取消</a>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

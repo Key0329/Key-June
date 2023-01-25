@@ -1,0 +1,23 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../style/helpers/variables';
+@import '../style/helpers/utilities';
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+@import '../style/helpers/mixin';
+
+@import '../style/base/base';
+
+@import '../style/components/utilities';
+@import '../style/components/hover';
+@import '../style/components/border';
+@import '../style/components/deco-box';
+@import '../style/components/gradient';
+
+@import '../style/layout/layout';
+
+@import '../style/pages/index';
+@import '../style/pages/courses';
+@import '../style/pages/admin';
+@import '../style/pages/member';
+@import '../style/pages/group-lessons';
+@import '../style/pages/gym-info';

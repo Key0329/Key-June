@@ -1,0 +1,89 @@
+// header
+.nav {
+  @include pc {
+    height: 40px;
+  }
+  &-logo{
+    font-family: lobster;
+    @include pad{
+
+      font-size: 36px;
+    }
+  }
+  &-menu {
+    &-ham {
+      width: 28px;
+      height: 24px;
+      @include pad {
+        width: 32px;
+        height: 32px;
+      }
+    }
+    &-mobile {
+      border-radius: 0px 0px 8px 8px;
+    }
+    &-member-btn {
+      &-expand {
+        transition: all 0.3s;
+        &.active {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &-member-panel {
+      width: 200px;
+      top: 56px; //
+      right: 0;
+      background: rgba(0, 0, 0, 0.24);
+      height: 0;
+      opacity: 0;
+      transition: ease-in-out 0.3s;
+      position: absolute;
+      z-index: 0;
+      padding: 0 24px;
+      a {
+        height: 0;
+        z-index: -1;
+        transition: all 0.3s;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 65px;
+        background-color: transparent;
+        top: 0px;
+        right: 0;
+        z-index: 0;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent rgba(0, 0, 0, 0.24) transparent;
+        top: -20px;
+        right: 5%;
+      }
+      &.active {
+        height: 144px;
+        opacity: 1;
+        padding: 16px 24px;
+        a {
+          height: 100%;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}
+
+// footer
+.footer {
+  &-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
